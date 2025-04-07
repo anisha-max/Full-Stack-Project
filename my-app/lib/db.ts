@@ -1,11 +1,11 @@
 import mongoose from "mongoose";
-import { error } from "console";
+
 
 
 const MONGODB_URI = process.env.MONGODB_URI!;
 
 if (!MONGODB_URI) {
-    throw error('Define MONGODB_URI')
+    throw new Error('Define MONGODB_URI')
 }
 
 let cached = global.mongoose;
