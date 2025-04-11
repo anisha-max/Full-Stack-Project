@@ -75,7 +75,7 @@ onProgress(Math.round(percentComplete))
         {
             uploading && (
                 <div className=" flex text-blue-500 text-sm items-center gap-2">
-<Loader2 className="animate-spin w-4 h-4" />
+{/* <Loader2 className="animate-spin w-4 h-4" /> */}
 <span>Uploading...</span>
                 </div>
             )
